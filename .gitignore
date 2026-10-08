@@ -1,0 +1,32 @@
+# --- dependencies / build output ---
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# --- runtime artifacts (renders, QA captures, daemon state) ---
+public/exports/
+data/
+qa/
+*.log
+
+# --- demo video pipeline (operator screenrecords manually; nothing here ships) ---
+public/demo/
+demo/
+demo/out/
+NARRATION.md
+DEMO_BRIEF.md
+
+# --- secrets / local env (never commit) ---
+.env
+
+# --- tooling ---
+.vercel/
+.DS_Store
+__pycache__/
+*.pyc
+
+# --- project docs to ignore ---
+SUBMISSION.md
+FEATURES_V2.md
+AGENTS_CONTRACT.md

@@ -1,0 +1,34 @@
+{
+  "name": "chogram",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CHOGRAM — Chog Broadcast Studio. Your Chog NFT is the actor.",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "studio": "remotion studio --port 3001",
+    "still": "remotion still",
+    "render": "remotion render",
+    "typecheck": "tsc --noEmit",
+    "selftest": "node scripts/selftest.mjs",
+    "daemon": "node scripts/broadcast-daemon.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.0",
+    "@remotion/player": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}

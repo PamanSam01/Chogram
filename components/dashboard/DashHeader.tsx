@@ -14,7 +14,13 @@ export function DashHeader({ wallet, chog, onDisconnect }: Props) {
     <header className="dash-head">
       <div className="dash-head__left">
         <a href="/" className="wordmark" aria-label="CHOGRAM home">
-          CHOGRAM<span className="wordmark__slash">/</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo/logo.png"
+            alt="CHOGRAM"
+            className="dash-logo-img"
+          />
+          <span className="wordmark__slash">/</span>
           <span className="wordmark__sub">STUDIO</span>
         </a>
         <span className="head-divider" aria-hidden="true" />

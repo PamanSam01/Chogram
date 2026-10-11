@@ -159,6 +159,17 @@ body {
 .brand svg {
   display: block;
 }
+.brand-logo-img {
+  display: block;
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.brand:hover .brand-logo-img {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 12px rgba(182, 255, 60, 0.35));
+}
 .brand:hover .brand-mark {
   border-color: var(--acid);
 }

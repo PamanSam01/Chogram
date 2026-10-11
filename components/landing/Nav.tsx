@@ -1,6 +1,4 @@
 import { shortAddr } from "@/lib/chog";
-import { MarkChog } from "./icons";
-
 type Props = {
   wallet: string | null;
   connecting: boolean;
@@ -24,9 +22,13 @@ export default function Nav({ wallet, connecting, onConnect, onOpenPicker }: Pro
   return (
     <header className="lg-nav">
       <div className="lg-wrap lg-nav-in">
-        <a className="brand" href="#top" onClick={(e) => jump(e, "top")}>
-          <MarkChog size={24} />
-          <span>CHOGRAM</span>
+        <a className="brand" href="#top" onClick={(e) => jump(e, "top")} aria-label="CHOGRAM home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo/logo.png"
+            alt="CHOGRAM"
+            className="brand-logo-img"
+          />
           <span className="brand-sub">CHOG BROADCAST STUDIO</span>
         </a>
 

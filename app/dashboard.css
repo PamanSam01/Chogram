@@ -202,8 +202,19 @@
   font-size: clamp(17px, 1.7vw, 23px);
   letter-spacing: 0.14em;
   display: inline-flex;
-  align-items: baseline;
-  gap: 2px;
+  align-items: center;
+  gap: 4px;
+}
+.dash-logo-img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.wordmark:hover .dash-logo-img {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px rgba(182, 255, 60, 0.35));
 }
 .wordmark__slash {
   color: var(--acid);
@@ -213,7 +224,7 @@
   font-size: clamp(9px, 0.7vw, 11px);
   letter-spacing: 0.3em;
   color: var(--violet2);
-  margin-left: 6px;
+  margin-left: 2px;
 }
 
 .head-divider {
